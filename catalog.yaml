@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: todd-test-two
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: harness-tr/todd-test-two
+    snyk.io/org-id: b4c68fa5-d1b2-451f-a162-ea2ed840727f
+    snyk.io/target-id: harness-tr/todd-test-two
+spec:
+  type: service
+  owner: group:default/harness_account_all_users
+  lifecycle: experimental

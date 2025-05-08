@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todd-test-two
+  labels:
+    app: todd-test-two
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: todd-test-two
+  template:
+    metadata:
+      labels:
+        app: todd-test-two
+    spec:
+      containers:
+        - name: todd-test-two
+          image: docker.io/parsontodd/todd-test-two:latest
+          ports:
+            - containerPort: 8080
